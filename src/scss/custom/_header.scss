@@ -1,0 +1,15 @@
+.layer-toggle {
+    flex: 0 1 auto;
+}
+.search {
+    flex: 1 1 100%;
+    display: flex;
+    justify-content: flex-end;
+    input {
+        flex: 0 1 auto;
+        width: 500px;
+    }
+    button {
+        flex: 0 1 auto;
+    }
+}

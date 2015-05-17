@@ -1,0 +1,28 @@
+aside {
+    flex: 0 0 100%;
+    overflow-y: scroll;
+    height: 100%;
+    div {
+        margin: 2px 5px;
+        padding: 10px 10px;
+        background: $secondary-background-color;
+    }
+}
+
+#layers li span {
+    float: right;
+    cursor: pointer;
+    color: $inactive-color;
+    &:hover{
+        color: $primary-color;
+    }
+}
+
+@media (min-width: 572px) {
+    aside {
+        flex: 0 0 300px;
+    }
+    .layer-toggle {
+        display: none;
+    }
+}

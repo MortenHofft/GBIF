@@ -1,0 +1,64 @@
+input[type=text] {
+    text-overflow: ellipsis;
+    color: $header-color;
+    background: transparent;
+    padding: 10px 10px 10px 10px;
+    margin: 10px;
+    border: 1px solid $inactive-color;
+    overflow: hidden;
+    appearance: none;
+    border-radius:0; 
+    border-radius:0;
+    &:focus{
+        outline: none;
+        border-color: $header-color;
+    }
+}
+
+::placeholder  {
+    color: $inactive-color;
+}
+button {
+    outline: none;
+    border-radius: 0px;
+    padding: 10px 20px 10px 20px;
+    background: $highlight-background-color;
+    color: $highlight-color;
+    border: 0px;
+    font-size: 2rem;
+    cursor: pointer;
+    &:disabled {
+        background: none;
+        color: $inactive-color;
+    }
+}
+.dropdown-menu {
+    color: $constrast-color;
+    position: absolute;
+    //top: 100%;
+    //left: 0;
+    z-index: 1000;
+    display: none;
+    min-width: 160px;
+    padding: 5px 0;
+    text-align: left;
+    background-color: $constrast-background-color;
+    box-shadow: 2px 5px 1px rgba(0, 0, 0, .175);
+    background-clip: padding-box;
+    >li>a {
+        display: block;
+        font-weight: 400;
+        white-space: nowrap;
+        padding: 3px 20px;
+        line-height: 1.42857;
+    }
+    .active{
+        >a, >a:hover, >a:focus, >a:hover {
+            color: $header-color;
+            text-decoration: none;
+            outline: 0;
+            background-color: $highlight-background-color;
+            cursor: pointer;
+        }
+    }
+}
